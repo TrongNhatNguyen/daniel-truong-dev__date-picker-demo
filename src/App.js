@@ -1,12 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './components/Header';
+import DateContainer from './components/DateContainer';
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-            </header>
+            <Header />
+            <div className="container">
+                <DateContainer />
+            </div>
         </div>
     );
 }
